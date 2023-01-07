@@ -6,6 +6,26 @@
   @include for-size(tablet) {
     padding-top: 62px;
     padding-bottom: 104px;
+    &::after {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 10px;
+      height: 100%;
+      background-color: red;
+    }
+    &::before {
+      content: ' ';
+      position: absolute;
+      outline: 1px soild blue;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 100%;
+      border-right: 1px dotted green;
+      border-left: 1px dotted green;
+    }
   }
   &--container {
     position: relative;
